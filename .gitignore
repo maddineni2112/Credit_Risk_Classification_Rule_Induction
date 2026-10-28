@@ -1,31 +1,15 @@
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-.env
+credit_risk_classification_research_paper.tex
+credit_risk_classification_research_paper.bib
 
-# Jupyter
-.ipynb_checkpoints/
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
 
-# R
+# R temporary files
 .Rhistory
 .RData
-.Ruserdata
-
-# Data and model outputs
-data/raw/
-*.pkl
-*.joblib
-*.h5
-*.pt
-*.pth
-*.onnx
-checkpoints/
-outputs/
-
-# OS/editor
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
+.Rproj.user/

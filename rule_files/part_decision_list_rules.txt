@@ -80,94 +80,79 @@ other_parties = guarantor AND
 credit_history = 'existing paid': good (5.0)
 
 purpose = education AND
-checking_status = <0: bad (4.0)
+checking_status = 0<=X<200: good (4.0/1.0)
 
 purpose = 'used car' AND
 savings_status = <100 AND
 installment_commitment = 2: good (6.0/1.0)
 
-savings_status = 'no known savings' AND
-credit_history = 'existing paid' AND
-employment = 4<=X<7: good (4.0)
-
 purpose = business AND
 duration <= 16: good (6.0)
 
-personal_status = 'male mar/wid': bad (23.0/9.0)
+purpose = education: bad (6.0)
 
-purpose = repairs: bad (4.0/1.0)
+foreign_worker = yes AND
+personal_status = 'male div/sep': bad (14.0/4.0)
+
+other_parties = 'co applicant' AND
+foreign_worker = yes AND
+housing = own AND
+duration > 15: bad (5.0/1.0)
 
 purpose = 'used car' AND
-housing = 'for free': bad (2.0)
-
-housing = 'for free' AND
-installment_commitment = 4 AND
-existing_credits = 1: good (5.0/1.0)
+savings_status = <100: bad (3.0)
 
 purpose = 'used car': good (3.0/1.0)
 
-purpose = education AND
-installment_commitment = 2: good (2.0)
+housing = 'for free' AND
+existing_credits = 1: good (5.0/1.0)
 
-purpose = furniture/equipment AND
-other_payment_plans = none AND
-checking_status = 0<=X<200: bad (10.0/2.0)
-
-purpose = education: bad (3.0)
-
-personal_status = 'male div/sep': bad (11.0/3.0)
-
-property_magnitude = 'life insurance' AND
-existing_credits = 2: good (11.0/2.0)
-
-existing_credits = 2 AND
-personal_status = 'female div/dep/mar': bad (7.0)
-
-credit_history = 'delayed previously' AND
-duration > 20: bad (6.0)
-
+housing = rent AND
 other_parties = none AND
-credit_history = 'critical/other existing credit' AND
-other_payment_plans = none: good (8.0/1.0)
-
-credit_history = 'existing paid' AND
-installment_commitment = 1: good (7.0/1.0)
-
-credit_history = 'existing paid' AND
-employment = <1: good (11.0/3.0)
-
-credit_history = 'critical/other existing credit': bad (5.0/1.0)
-
-credit_history = 'existing paid' AND
-employment = 1<=X<4 AND
-purpose = furniture/equipment: good (5.0)
-
-purpose = furniture/equipment: bad (6.0)
-
-credit_history = 'existing paid' AND
-purpose = radio/tv AND
+existing_credits = 1 AND
 installment_commitment = 4 AND
+other_payment_plans = none: bad (11.0/4.0)
+
+purpose = radio/tv AND
+other_parties = none AND
+savings_status = <100: good (26.0/9.0)
+
+other_payment_plans = bank: bad (13.0/4.0)
+
 other_payment_plans = none AND
-personal_status = 'female div/dep/mar': good (6.0/1.0)
+foreign_worker = yes AND
+purpose = business: good (9.0/3.0)
 
-other_parties = none AND
-other_payment_plans = bank: good (8.0/1.0)
+other_payment_plans = none AND
+foreign_worker = yes AND
+purpose = 'new car' AND
+duration > 22: bad (6.0/1.0)
 
-other_parties = none AND
-employment = 1<=X<4 AND
-savings_status = <100 AND
-duration > 15: bad (5.0/1.0)
+other_payment_plans = none AND
+foreign_worker = yes AND
+purpose = 'new car' AND
+property_magnitude = 'real estate': good (5.0)
 
-other_parties = none AND
-employment = 1<=X<4: good (6.0/2.0)
+other_payment_plans = none AND
+foreign_worker = yes AND
+purpose = 'new car': good (10.0/3.0)
 
-employment = >=7: bad (3.0)
+other_payment_plans = none AND
+foreign_worker = yes AND
+savings_status = 'no known savings': good (11.0/4.0)
 
-own_telephone = yes: bad (4.0)
+other_payment_plans = none AND
+foreign_worker = yes AND
+existing_credits = 1 AND
+installment_commitment = 4: bad (16.0/3.0)
 
-employment = 4<=X<7: good (3.0)
+existing_credits = 2: bad (9.0/1.0)
+
+checking_status = <0: good (7.0)
+
+other_parties = none: good (9.0/2.0)
 
 : bad (2.0)
 
-Number of Rules  : 	52
+Number of Rules  : 	44
 
