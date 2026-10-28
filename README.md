@@ -7,7 +7,7 @@
 ![Statlog German Credit](https://img.shields.io/badge/dataset-Statlog%20German%20Credit-2F6F9F?style=flat-square)
 ![Validation](https://img.shields.io/badge/validation-repeated%2010--fold-6C757D?style=flat-square)
 ![Robustness](https://img.shields.io/badge/robustness-10%25%20label%20noise-9B59B6?style=flat-square)
-![Research Paper](https://img.shields.io/badge/output-research%20paper-8E5A2A?style=flat-square)
+![Models](https://img.shields.io/badge/models-Decision%20Tree%20%7C%20PART%20%7C%20JRip-8E5A2A?style=flat-square)
 
 An R-based study of interpretable credit-risk classifiers using the Statlog German Credit dataset. The project compares a pruned Decision Tree, PART, and RIPPER/JRip while keeping the learned decision rules visible and auditable.
 
